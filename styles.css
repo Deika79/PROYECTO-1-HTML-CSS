@@ -1,0 +1,224 @@
+/*Principal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primario: #c5598b;
+    --color-secundario: #d483a2;
+    --color-texto: #333;
+    --fuente-principal: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/*Cabecera*/
+header {
+    background: var(--color-primario);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px; 
+    height: auto; 
+}
+/*Navegación*/
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Seccion hero*/
+
+@font-face {
+    font-family: 'Beyond Wonderland';
+    src: url('Beyond Wonderland.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hero {
+    background: url('7.png') no-repeat center center/cover;
+    color: white;
+    padding: 6rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero p {
+    font-family: 'Beyond Wonderland', serif; 
+    font-size: 1.5rem;
+}
+
+
+#Zoralan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    flex-wrap: wrap; 
+}
+
+#Zoralan .texto {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    font-size: 1.1rem;
+}
+
+#Zoralan img {
+    width: 50%;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#Zoralan {
+    margin-bottom: 4rem; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #Zoralan {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #Zoralan .texto, #Zoralan img {
+        width: 90%;
+    }
+
+    #Zoralan img {
+        max-height: 300px;
+    }
+}
+
+/* Portafolio */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.proyecto {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#portafolio {
+    margin-bottom: 4rem; 
+}
+
+
+#contacto {
+    background-color: #8B0000; /* Rojo oscuro */
+    color: white; /* Texto en blanco para contraste */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    max-width: 500px; /* Ancho máximo del recuadro */
+    margin: auto; /* Centrar en la página */
+    text-align: center; /* Centrar el contenido dentro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para efecto elevado */
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; 
+}
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: black;
+}
+
+
+form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background: #D32F2F; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #B71C1C; 
+}
+
+form label {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; 
+    display: block; 
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem; 
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: black;
+}
+
+
+
+/*Footer*/
+footer {
+    background: var(--color-primario);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.redes-sociales a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
