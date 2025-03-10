@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-primario: #c5598b;
+    --color-primario: #680505;
     --color-secundario: #d483a2;
     --color-texto: #333;
     --fuente-principal: 'Arial', sans-serif;
@@ -68,11 +68,16 @@ nav ul li a {
 
 .hero h1 {
     font-size: 4rem;
+    position: relative;
+    top: -25px;
+   
 }
 
 .hero p {
     font-family: 'Beyond Wonderland', serif; 
     font-size: 1.5rem;
+    position: relative;
+    top: -25px;
 }
 
 
@@ -146,19 +151,20 @@ nav ul li a {
     margin-bottom: 4rem; 
 }
 
+/* Formulario */
 
 #contacto {
-    background-color: #8B0000; /* Rojo oscuro */
-    color: white; /* Texto en blanco para contraste */
-    padding: 2rem; /* Espaciado interno */
-    border-radius: 12px; /* Bordes redondeados */
-    max-width: 500px; /* Ancho máximo del recuadro */
-    margin: auto; /* Centrar en la página */
-    text-align: center; /* Centrar el contenido dentro */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para efecto elevado */
+    background-color: #8B0000; 
+    color: white; 
+    padding: 2rem; 
+    border-radius: 12px; 
+    max-width: 500px; 
+    margin: auto; 
+    text-align: center; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
-/* Formulario */
+
 form {
     display: flex;
     flex-direction: column;
@@ -221,4 +227,66 @@ footer {
     color: white;
     margin: 0 1rem;
     text-decoration: none;
+}
+
+/* TIENDA DE LIBROS*/
+#libros {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.libros-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.libro {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    
+
+}
+
+.libro img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.libro h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+#libros h2 {
+    font-family: 'Beyond Wonderland', serif; 
+    font-size: 3rem;
+    position: relative;
+    top: -25px;
+}
+
+.libro p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.libro button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.libro button:hover {
+    background-color: #0056b3;
 }
