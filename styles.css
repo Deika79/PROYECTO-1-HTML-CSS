@@ -292,3 +292,35 @@ footer {
 .libro button:hover {
     background-color: #0056b3;
 }
+/* PAGINA MAPA*/
+
+h1 {
+    margin: 20px 0;
+    
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mapa {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.marker {
+    position: absolute;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.marker:hover {
+    transform: scale(1.2);
+}
