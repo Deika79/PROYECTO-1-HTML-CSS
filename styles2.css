@@ -1,0 +1,33 @@
+#Reino {
+    margin: 40px auto; /* Centra la sección horizontalmente y mantiene el margen superior e inferior */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8B0000; /* Rojo oscuro */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 900px; /* Ajusta el ancho según necesites */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para efecto elevado */
+}
+
+#Reino .texto {
+    flex: 1;
+    padding-right: 20px; /* Espaciado entre texto e imagen */
+}
+
+#Reino h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#Reino p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#Reino img {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
