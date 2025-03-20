@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Reinos</title>
+    <link rel="stylesheet" href="styles3.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="1.png" alt="Logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="https://dgarcia1683.wixsite.com/leyendas-de-naryo" target="_blank">Libros</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>TEST</h1>
+        <p>Tu Reino de Naryo</p>
+    </section>
+
+    <main>
+        <section id="test-container">
+            <div id="pregunta-container">
+                <h2 id="pregunta">Pregunta aquí...</h2>
+                <div id="opciones"></div>
+            </div>
+            <button id="siguiente" onclick="siguientePregunta()">Siguiente</button>
+        </section>
+
+        <!-- Contenedor de resultados (corregido, solo hay uno ahora) -->
+        <section id="resultado-container" style="display: none;">
+            <h2 id="resultado-texto"></h2>
+            <img id="resultado-imagen" src="" alt="Reino">
+            <button id="atras" class="boton">Volver a Intentarlo</button>
+        </section>
+    </main>
+</body>
+</html>
