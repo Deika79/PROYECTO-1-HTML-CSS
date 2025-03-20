@@ -73,6 +73,11 @@ nav ul li a {
    
 }
 
+.nombreMapa h1 {
+    font-family: 'Beyond Wonderland', serif; 
+    font-size: 6rem;
+}
+
 .hero p {
     font-family: 'Beyond Wonderland', serif; 
     font-size: 1.5rem;
@@ -162,6 +167,7 @@ nav ul li a {
     border-radius: 12px; 
     max-width: 500px; 
     margin: auto; 
+    margin-top: 30px;
     text-align: center; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
