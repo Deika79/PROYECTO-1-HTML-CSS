@@ -50,47 +50,47 @@ const imageMap = {
         },
         "Femenino": {
             "Chamán": "8.png",
-            "Guerrero de las Llanuras": "betlands_femenino_guerrero.png"
+            "Guerrero de las Llanuras": "10.png"
         }
     },
     "Anolath": {
         "Masculino": {
-            "Caballero Oscuro": "anolath_masculino_caballero.png",
-            "Mago de Sangre": "anolath_masculino_mago.png"
+            "Caballero Oscuro": "11.png",
+            "Mago de Sangre": "13.png"
         },
         "Femenino": {
-            "Caballero Oscuro": "anolath_femenino_caballero.png",
-            "Mago de Sangre": "anolath_femenino_mago.png"
+            "Caballero Oscuro": "12.png",
+            "Mago de Sangre": "14.png"
         }
     },
     "Silvania": {
         "Masculino": {
-            "Arquero": "silvania_masculino_arquero.png",
-            "Druida": "silvania_masculino_druida.png"
+            "Arquero": "15.png",
+            "Druida": "17.png"
         },
         "Femenino": {
-            "Arquero": "silvania_femenino_arquero.png",
-            "Druida": "silvania_femenino_druida.png"
+            "Arquero": "16.png",
+            "Druida": "18.png"
         }
     },
     "Wanlands": {
         "Masculino": {
-            "Caballero del Sol Ardiente": "wanlands_masculino_caballero.png",
-            "Cultista del Sol Radiante": "wanlands_masculino_cultista.png"
+            "Caballero del Sol Ardiente": "19.png",
+            "Cultista del Sol Radiante": "21.png"
         },
         "Femenino": {
-            "Caballero del Sol Ardiente": "wanlands_femenino_caballero.png",
-            "Cultista del Sol Radiante": "wanlands_femenino_cultista.png"
+            "Caballero del Sol Ardiente": "20.png",
+            "Cultista del Sol Radiante": "22.png"
         }
     },
     "Ravenheim": {
         "Masculino": {
-            "Raven Knight": "ravenheim_masculino_knight.png",
-            "Mago de los Cuervos": "ravenheim_masculino_mago.png"
+            "Raven Knight": "23.png",
+            "Mago de los Cuervos": "25.png"
         },
         "Femenino": {
-            "Raven Knight": "ravenheim_femenino_knight.png",
-            "Mago de los Cuervos": "ravenheim_femenino_mago.png"
+            "Raven Knight": "24.png",
+            "Mago de los Cuervos": "26.png"
         }
     }
 };
