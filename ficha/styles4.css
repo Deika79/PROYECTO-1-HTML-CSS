@@ -1,0 +1,59 @@
+body {
+    font-family: 'Garamond', serif; /* Fuente con estilo antiguo */
+    background-color: #e9e1c7; /* Color de fondo cálido, estilo pergamino */
+    text-align: center;
+    padding: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/old-map.png'); /* Textura de fondo estilo mapa antiguo */
+}
+
+.container {
+    background: #fdf6e3; /* Color de fondo cálido, tipo pergamino envejecido */
+    padding: 30px;
+    padding-left: 60px; /* Aumenta el espacio a la izquierda */
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+    border: 3px solid #6b4f3b; /* Borde oscuro y grueso */
+    font-size: 18px;
+}
+
+button {
+    margin: 15px;
+    padding: 12px 25px;
+    background: #4e2a84; /* Color de fondo oscuro, tipo terciopelo */
+    color: white;
+    border: 2px solid #3b1e5b; /* Borde más oscuro para resaltar */
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Letras en mayúsculas para más impacto */
+    font-family: 'Garamond', serif;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #6a3c8c; /* Cambio a un tono más brillante al hacer hover */
+    border-color: #491f6a;
+}
+
+.sheet {
+    margin-top: 30px;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid #6b4f3b; /* Borde más grueso y oscuro */
+    border-radius: 8px;
+    background: #f9f0d3; /* Color suave, estilo papel envejecido */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 3px solid #6b4f3b; /* Borde similar al de la ficha */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+

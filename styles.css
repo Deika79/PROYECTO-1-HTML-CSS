@@ -307,8 +307,9 @@ h1 {
 
 .map-container {
     position: relative;
+    margin-top: 30px;
     display: inline-block;
-    max-width: 100%;
+    max-width: 90%;
     border: 2px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
