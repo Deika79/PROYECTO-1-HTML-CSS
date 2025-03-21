@@ -122,5 +122,5 @@ document.getElementById("generate").addEventListener("click", function() {
     document.getElementById("char-class").textContent = charClass;
     document.getElementById("char-attributes").innerHTML = Object.keys(attributes).map(attr => `<li>${attr}: ${attributes[attr]}</li>`).join("");
     document.getElementById("char-equipment").innerHTML = items.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("char-image").src = `images/${imageSrc}`;
+    document.getElementById("char-image").src = `${imageSrc}`;
 });
