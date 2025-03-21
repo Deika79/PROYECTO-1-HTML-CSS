@@ -5,7 +5,7 @@ const classes = {
     "Betlands": ["Chamán", "Guerrero de las Llanuras"],
     "Anolath": ["Caballero Oscuro", "Mago de Sangre"],
     "Silvania": ["Arquero", "Druida"],
-    "Wanlands": ["Caballero del Sol Ardiente", "Asesino de las Sombras"],
+    "Wanlands": ["Caballero del Sol Ardiente", "Cultista del Sol Radiante"],
     "Ravenheim": ["Raven Knight", "Mago de los Cuervos"]
 };
 const equipment = {
@@ -13,7 +13,17 @@ const equipment = {
     "Sacerdote-Forjador": ["Báculo ígneo", "Túnica de fuego", "Pergamino de llamas"],
     "Jinete de Águilas": ["Lanza de jinete", "Armadura ligera", "Águila entrenada"],
     "Inquisidor": ["Maza sagrada", "Escudo del Imperio", "Símbolo sagrado"],
-    "Arquero": ["Arco largo élfico", "Capa de camuflaje", "Daga de caza"]
+    "Arquero": ["Arco largo ", "Capa de camuflaje", "Daga de caza"],
+    "Chamán": ["Vara", "2 pociones de curación", "Daga de caza"],
+    "Guerrero de las Llanuras": ["Arco largo ", "Espada corta", "Daga de caza"],
+    "Caballero Oscuro": ["Armadura pesada", "Espada Larga", "Escudo"],
+    "Mago de Sangre": ["Daga ritual", "Libro de Hechizos", "Saquito de componentes"],
+    "Druida": ["Libro de conjuros", "Capa ritual", "Daga de caza"],
+    "Caballero del sol Ardiente": ["Espada larga", "Capa de camuflaje", "Daga ritual"],
+    "Cultista del Sol Radiante": ["Espada corta", "Armadura de cuero", "Arco corto"],
+    "Raven Knight": ["Espada larga", "Armadura completa", "Escudo"],
+    "Mago de los cuervos": ["Túnica ritual", "Bolsita de componentes", "Daga ritual"]
+
 };
 
 function getRandomElement(arr) {
