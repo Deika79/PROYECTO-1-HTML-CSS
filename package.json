@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-1-html-css",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deika79/PROYECTO-1-HTML-CSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deika79/PROYECTO-1-HTML-CSS/issues"
+  },
+  "homepage": "https://github.com/Deika79/PROYECTO-1-HTML-CSS#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0"
+  }
+}
