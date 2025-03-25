@@ -34,11 +34,11 @@ const preguntas = [
 
 // OBJETO PARA ASIGNAR IMÁGENES A CADA REINO
 const imagenesReinos = {
-    Valoria: "valoria.png",
-    Mayholm: "mayholm.png",
-    Anolath: "anolath.png",
-    Betlands: "betlands.png",
-    Silvania: "silvania.png"
+    Valoria: "../img2/valoria.png",
+    Mayholm: "../img2/mayholm.png",
+    Anolath: "../img2/anolath.png",
+    Betlands: "../img2/betlands.png",
+    Silvania: "../img2/silvania.png"
 };
 
 // VARIABLES DEL JUEGO
