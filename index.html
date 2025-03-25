@@ -129,33 +129,40 @@
 
 </body>
 <script>
-    // Obtén el formulario y añade un evento de envío
-    const form = document.querySelector('form');
-  
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();  // Evita que el formulario se envíe de manera tradicional
-  
-      // Recoge los datos del formulario
-      const nombre = document.getElementById('nombre').value;
-      const email = document.getElementById('email').value;
-      const mensaje = document.getElementById('mensaje').value;
-  
-      // Envia los datos al servidor usando fetch
-      fetch('http://localhost:3000/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ nombre, email, mensaje }),
-      })
-      .then(response => response.text())
-      .then(data => {
-        alert(data);  // Muestra la respuesta del servidor
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
+    // Esperar a que el DOM esté cargado
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();  // Evita el envío tradicional del formulario
+
+            // Recoge los datos del formulario
+            const nombre = document.getElementById("nombre").value;
+            const email = document.getElementById("email").value;
+            const mensaje = document.getElementById("mensaje").value;
+
+            try {
+                // Enviar los datos al servidor
+                const response = await fetch("http://localhost:3310/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ nombre, email, mensaje }),
+                });
+
+                if (response.ok) {
+                    alert("Mensaje enviado correctamente");
+                    form.reset(); // Limpiar el formulario después de enviarlo
+                } else {
+                    alert("Error al enviar el mensaje");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Hubo un problema con el envío");
+            }
+        });
     });
-  </script>
+</script>
   
 </html>

@@ -123,3 +123,39 @@ atrasBoton.addEventListener("click", reiniciarTest);
 
 // INICIALIZAR TEST
 cargarPregunta();
+
+// Formulario
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault(); // Evita que la página se recargue
+
+        // Obtener los datos del formulario
+        const nombre = document.getElementById("nombre").value;
+        const email = document.getElementById("email").value;
+        const mensaje = document.getElementById("mensaje").value;
+
+        // Enviar los datos al servidor con fetch
+        try {
+            const response = await fetch("http://localhost:3310/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ nombre, email, mensaje })
+            });
+
+            if (response.ok) {
+                alert("Mensaje enviado correctamente");
+                form.reset(); // Limpia el formulario después de enviarlo
+            } else {
+                alert("Error al enviar el mensaje");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Hubo un problema con el envío");
+        }
+    });
+});
