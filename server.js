@@ -4,7 +4,7 @@ const mysql = require('mysql2');
 
 // Creamos la aplicación de Express
 const app = express();
-const port = 3000;  // El puerto en el que correrá el servidor
+const port = 3310;  // El puerto en el que correrá el servidor
 
 // Configuramos Express para que pueda recibir datos en formato JSON
 app.use(express.json());
@@ -13,7 +13,7 @@ app.use(express.json());
 const db = mysql.createConnection({
   host: 'localhost',       // O la dirección de tu servidor MySQL
   user: 'root',            // Tu usuario de MySQL
-  password: '',            // Tu contraseña de MySQL (si tienes una)
+  password: 'Zoiberg_1979!',            // Tu contraseña de MySQL (si tienes una)
   database: 'mydb'         // El nombre de tu base de datos
 });
 
