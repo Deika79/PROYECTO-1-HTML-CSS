@@ -332,3 +332,68 @@ h1 {
     transform: scale(1.2);
 }
 
+/* Hogar de las Tormentas*/
+
+.librobig {
+    
+    max-width: 600px;
+    margin: 3rem auto;
+    border: 3px solid #8b0000;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px #8b0000;
+    border-radius: 10px;
+}
+
+.titulobig {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ccc;
+    text-shadow: 3px 3px 5px rgb(105, 86, 86);
+}
+
+.descripcionbig {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #d4af37;
+}
+
+.portadabig {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portadabig img {
+
+    width: 50%;
+    border: 3px solid #d4af37;
+    border-radius: 5px;
+}
+
+.boton-compra {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #d4af37;
+}
+
+.boton-compra:hover {
+    background: #600000;
+    box-shadow: 0 0 15px #ffcc00;
+}
+
