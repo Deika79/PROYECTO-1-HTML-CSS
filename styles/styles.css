@@ -355,7 +355,8 @@ h1 {
 .descripcionbig {
     font-size: 1.2rem;
     font-style: italic;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 40px;
     color: #ccc;
 }
 
@@ -374,7 +375,7 @@ h1 {
 
 .portadabig img {
 
-    width: 50%;
+    width: 30%;
     border: 3px solid #d4af37;
     border-radius: 5px;
 }
