@@ -34,17 +34,23 @@ header {
     width: 80px; 
     height: auto; 
 }
-/* Navegación */
+/* NAV GENERAL */
+nav {
+    background: #333;
+    padding: 10px 0;
+    position: relative;
+}
+
 nav ul {
     list-style: none;
-    display: flex;
     padding: 0;
     margin: 0;
-    
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    position: relative;  /* Asegura que los submenús se posicionen bien */
+    position: relative;
     margin: 0 1rem;
 }
 
@@ -79,16 +85,74 @@ nav ul li a {
     display: block;
     background: white;
     border-bottom: 1px solid #ddd;
-    border-radius: 0;
 }
 
 .submenu a:hover {
     background: #f4f4f4;
 }
 
-/* Mostrar el submenú al pasar el ratón */
-.menu:hover .submenu {
-    display: block;
+/* Mostrar el submenú al hacer hover en pantallas grandes */
+@media (min-width: 768px) {
+    .menu:hover .submenu {
+        display: block;
+    }
+}
+
+/* ==========================
+    MENÚ RESPONSIVO
+   ========================== */
+.hamburger {
+    display: none; /* Oculto en escritorio */
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
+}
+
+/* Versión móvil */
+@media (max-width: 767px) {
+    nav ul {
+        display: none; /* Oculta el menú en móviles */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: #222;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex; /* Se mostrará cuando se haga clic en el icono de hamburguesa */
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        display: block;
+    }
+
+    .hamburger {
+        display: block; /* Muestra el icono de hamburguesa en móviles */
+    }
+
+    /* Submenú en móviles */
+    .submenu {
+        position: relative;
+        display: none;
+        background: #444;
+        width: 100%;
+    }
+
+    .menu.open .submenu {
+        display: block;
+    }
 }
 
 /*Seccion hero*/

@@ -19,6 +19,7 @@
         </div>
         
         <nav>
+            <div class="hamburger">&#9776;</div>
             <ul>
                 <li><a href="El Hogar/hogar.html">Libros</a></li>
                 <li class="menu">
@@ -34,7 +35,6 @@
                         <li><a href="mapa/Valoria.html">Valoria</a></li>
                         <li><a href="mapa/Wanlands.html">Wanlands</a></li>
                         <li><a href="mapa/Zurwan.html">Zurwan</a></li>
-                        
                     </ul>
                 </li>
                 <li><a href="test/test.html">Test</a></li>
@@ -43,6 +43,7 @@
                 <li><a href="Bestiario/bestiario.html">Bestiario</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <section class="hero">
@@ -183,5 +184,24 @@
         });
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("nav ul");
+    
+        hamburger.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+        });
+    
+        // Submenú en móviles
+        document.querySelectorAll(".menu > a").forEach(menu => {
+            menu.addEventListener("click", function (event) {
+                event.preventDefault(); // Evita que se siga el enlace directamente
+                this.parentNode.classList.toggle("open");
+            });
+        });
+    });
+    </script>
+    
   
 </html>
