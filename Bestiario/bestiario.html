@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo Portafolio de un mundo de fantasía proyecto web">
+    <meta name="author" content="Naryo">
+    <meta name="keywords" content="portafolio, desarrollo web, proyectos, HTML, CSS">
+    <title>Bestiario de Naryo</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/png" href="../img/30.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img2/1.png" alt="Logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../mapa/mapa.html">Mapa</a></li>
+                <li><a href="../test/test.html">Test</a></li>
+                <li><a href="../ficha/ficha.html">Ficha</a></li>
+                <li><a href="../El Hogar/hogar.html">Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bestiario de Naryo</h1>
+    </section>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="1.png" alt="Imagen 1" style="transform: rotateY(0deg) translateZ(300px);">
+            <img src="2.png" alt="Imagen 2" style="transform: rotateY(36deg) translateZ(300px);">
+            <img src="3.png" alt="Imagen 3" style="transform: rotateY(72deg) translateZ(300px);">
+            <img src="4.png" alt="Imagen 4" style="transform: rotateY(108deg) translateZ(300px);">
+            <img src="5.png" alt="Imagen 5" style="transform: rotateY(144deg) translateZ(300px);">
+            <img src="6.png" alt="Imagen 6" style="transform: rotateY(180deg) translateZ(300px);">
+            <img src="7.png" alt="Imagen 7" style="transform: rotateY(216deg) translateZ(300px);">
+            <img src="8.png" alt="Imagen 8" style="transform: rotateY(252deg) translateZ(300px);">
+            <img src="9.png" alt="Imagen 9" style="transform: rotateY(288deg) translateZ(300px);">
+            <img src="10.png" alt="Imagen 10" style="transform: rotateY(324deg) translateZ(300px);">
+        </div>
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+    </div>
+
+    <!-- Modal para la imagen ampliada -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 David García.</p>
+    </footer>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    let angle = 0;
+    const totalImages = 10;
+    const rotationStep = 360 / totalImages;
+
+    document.getElementById("next").addEventListener("click", () => {
+        angle -= rotationStep;
+        document.querySelector(".carousel").style.transform = `rotateY(${angle}deg)`;
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+        angle += rotationStep;
+        document.querySelector(".carousel").style.transform = `rotateY(${angle}deg)`;
+    });
+
+    // Seleccionamos elementos del DOM
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close");
+
+    // Asegúrate de que el modal esté oculto al cargar la página
+    modal.style.display = "none";
+
+    // Agregar evento a cada imagen del carrusel
+    document.querySelectorAll(".carousel img").forEach(img => {
+        img.addEventListener("click", function () {
+            modal.style.display = "flex";  // Mostrar el modal al hacer clic en la imagen
+            modalImg.src = this.src; // Mostrar la imagen en grande
+        });
+    });
+
+    // Cerrar el modal al hacer clic en la 'X'
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // Cerrar el modal si se hace clic fuera de la imagen
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
