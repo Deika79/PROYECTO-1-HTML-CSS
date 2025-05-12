@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function getOracleResponse(question) {
-        const endpoint = "https://deika79.github.io/PROYECTO-1-HTML-CSS/oraculo"; // Aquí debes poner la URL de tu backend
+        const endpoint = "https://deika79.github.io/PROYECTO-1-HTML-CSS/oraculo/oraculo.html"; // Aquí debes poner la URL de tu backend
 
         const response = await fetch(endpoint, {
             method: "POST",
